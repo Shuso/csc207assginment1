@@ -1,0 +1,217 @@
+Class name:Jshell
+Parent class: N/A
+Subclass: N/A
+
+Responsibilities: 
+* Provide client access to commands
+* Function as the Brain of JShell and  control/keep JShell running 
+
+Collaborators: 
+* ClientConsole
+* Commands
+* Validity
+=========================================================================
+
+Class name: ClientCosole
+Parent class: N/A
+Subclass: N/A
+
+Responsibilities: 
+* Display an error message
+* Display a prompt
+* Repeat the command name and argument after execution of the code
+
+Collaborators: 
+* N/A
+ 
+=========================================================================
+
+Class name: Command
+Parent class: N/A
+Subclass: ls, cd, mv,exit,echo, cat, get,cp, mkdir, pwd,
+
+Responsibilities: 
+* Allow customer to choose a type of command
+* Perform the command that customer chose
+* Perform invalid command extension
+
+Collaborators: 
+* ls
+* cd
+* mv
+* exit
+* echo
+* cat
+* get
+* cp
+* mkdir
+* pwd
+* file system
+* file manager
+
+=========================================================================
+ 
+Class name: FileManager
+Parent class: N/A
+Subclass: create, change, remove.....
+
+Responsibilities: 
+* provide all the functionality that Command needed such as: move, create, 
+add, overwrite, append,etc. to manage and edit 
+the files as command needed
+
+
+Collaborators: 
+* FileSystem
+
+=========================================================================
+
+Class name: FileSystem
+Parent class: N/A
+Subclass: N/A
+
+Responsibilities: 
+* a mock file system
+
+Collaborators: 
+* FileManager
+=========================================================================
+
+Class name: Validity
+Parent class: N/A
+Subclass: N/A
+
+Responsibilities: 
+* check whether the inputs by users are valid 
+
+Collaborators: 
+* N/A 
+=========================================================================
+
+Class name: CommandLs
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to command ls use case
+
+Collaborators: 
+* FileSystem
+* FileManger
+=========================================================================
+
+Class name: CommandCd
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to cd command use case
+
+Collaborators: 
+* FileSystem
+* FileManger
+=========================================================================
+
+Class name: CommandMv
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to mv command use case
+
+Collaborators: 
+* FileSystem
+* FileManger
+=========================================================================
+
+Class name: CommandExit
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to exit command use case
+
+Collaborators: 
+* FileSystem
+* FileManger
+
+=========================================================================
+
+Class name: CommandCat
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to cat command use case
+
+Collaborators: 
+* FileSystem
+* FileManger
+
+=========================================================================
+
+Class name: CommandPwd
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to pwd command use case
+
+Collaborators: 
+* FileSystem
+* FileManger
+=========================================================================
+
+Class name: CommandEcho
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to echo1 command use case
+
+
+Collaborators: 
+* FileSystem
+* FileManger
+
+
+=========================================================================
+
+Class name: CommandCp
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to cp command use case
+
+
+Collaborators: 
+* FileSystem
+* FileManger
+
+=========================================================================
+
+Class name: CommandGet
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to get command use case
+
+
+Collaborators: 
+* FileSystem
+* FileManger
+=========================================================================
+
+Class name: CommandMkdir
+Parent class: Command
+Subclass: N/A
+
+Responsibilities: 
+* Perform operations peculiar to mkdir command use case
+
+
+Collaborators: 
+* FileSystem
+* FileManger
